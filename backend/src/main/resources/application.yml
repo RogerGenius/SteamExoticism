@@ -1,0 +1,30 @@
+server:
+  port: 18080
+
+spring:
+  application:
+    name: steamexoticism
+  datasource:
+    driver-class-name: org.sqlite.JDBC
+    url: jdbc:sqlite:./data/app.db?journal_mode=WAL&busy_timeout=5000&synchronous=NORMAL&foreign_keys=on
+    hikari:
+      # 个人单机工具：单连接最稳，彻底规避 SQLite 写锁冲突
+      maximum-pool-size: 1
+      minimum-idle: 1
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    # 开发期打印 SQL，可注释关闭
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+
+logging:
+  file:
+    name: ./logs/app.log
+  level:
+    root: info
+    com.steamexoticism: debug
