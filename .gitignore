@@ -30,3 +30,6 @@ backend/src/main/resources/static/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ==== AI ====
+.dsh/
