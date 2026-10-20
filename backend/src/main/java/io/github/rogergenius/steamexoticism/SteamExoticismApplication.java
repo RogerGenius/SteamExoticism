@@ -1,4 +1,4 @@
-package com.steamexoticism;
+package io.github.rogergenius.steamexoticism;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ import java.nio.file.Path;
  * SteamExoticism 应用入口。
  */
 @SpringBootApplication
-@MapperScan("com.steamexoticism.mapper")
+@MapperScan( "io.github.rogergenius.steamexoticism.mapper" )
 public class SteamExoticismApplication {
 
     public static void main(String[] args) {

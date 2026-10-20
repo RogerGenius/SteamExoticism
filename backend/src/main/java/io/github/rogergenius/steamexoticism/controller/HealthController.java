@@ -1,6 +1,6 @@
-package com.steamexoticism.controller;
+package io.github.rogergenius.steamexoticism.controller;
 
-import com.steamexoticism.common.Result;
+import io.github.rogergenius.steamexoticism.common.Result;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;

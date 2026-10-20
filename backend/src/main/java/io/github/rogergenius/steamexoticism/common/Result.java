@@ -1,4 +1,4 @@
-package com.steamexoticism.common;
+package io.github.rogergenius.steamexoticism.common;
 
 import lombok.Data;
 
